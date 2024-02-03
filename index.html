@@ -4,24 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Lean Delivery Assessment</title>
+    <title>Mostafa Eldweek Assessment</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div>
-      <div id="header">
-        <p>{{name}}</p>
-        <div id="menu">
-          <ul>
-            <li>CV</li>
-            <li>GitHub</li>
-            <li>Contact</li>
-          </ul>
-        </div>
+    <header>
+      <div>
+        <h1 id="myName"></h1>
+        <nav>
+          <div class="header-links">
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1yFXJDca8mNqoouL9bxZahXPrIvVTunUP/view?usp=sharing"
+              >CV</a
+            >
+            <a target="_blank" href="https://github.com/mostafaeldweek"
+              >GitHub</a
+            >
+
+            <a id="openModalBtn">Contact</a>
+
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span id="closeModalBtn" class="close">&times;</span>
+                <h2>My Contacts</h2>
+                <p>Mobile phone : +20106129461</p>
+                <p>E-mail : mostafaeldweek98@gmail.com</p>
+                <p>
+                  LinkedIn :
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/mostafa-eldweek-02397126a"
+                    >linkedin</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-      <div id="content">
-        <p>{{date}}</p>
-        <div>
+    </header>
+    <main>
+      <article>
+        <p id="currentDate"></p>
+        <section>
           <p>
             I had seen little of Holmes lately. My marriage had drifted us away
             from each other. My own complete happiness, and the home-centred
@@ -69,17 +95,17 @@
             before the fire and looked me over in his singular introspective
             fashion.
           </p>
-        </div>
-        <div id="footer">
-          <div>
-            <p>
-              Passage adapted from Arthur Conan Doyle's "A Scandal in Bohemia"
-              (1891)
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <section>
+        <p>
+          Passage adapted from Arthur Conan Doyle's "A Scandal in Bohemia"
+          (1891)
+        </p>
+      </section>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
